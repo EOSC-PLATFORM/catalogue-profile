@@ -26,7 +26,7 @@ if not on_rtd:
 # -- Project information -----------------------------------------------------
 
 project = 'EOSC - Catalogue PROFILE'
-copyright = '2022, EOSC'
+copyright = '2022-2023, EOSC'
 author = 'EOSC profile strategy team'
 
 # The full version, including alpha/beta/rc tags
