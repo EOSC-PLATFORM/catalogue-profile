@@ -11,7 +11,7 @@ Welcome to EOSC - Catalogue PROFILE documentation
    :maxdepth: 1
 
    introduction
-   elementsCatalogue
+   elements
 
 Indices and tables
 ==================
