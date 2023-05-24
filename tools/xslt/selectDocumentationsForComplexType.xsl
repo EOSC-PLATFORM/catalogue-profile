@@ -19,8 +19,7 @@ Catalogue
      - Description
      - Mandatory<xsl:for-each select="//xs:complexType[@name='catalogue']//*"><xsl:choose><xsl:when test="xs:documentation">
    * - <xsl:value-of select='../@name'/>
-     - <xsl:value-of select='normalize-space(xs:documentation)'/>
-        <xsl:call-template name="checkVocabulary">
+     - <xsl:value-of select='normalize-space(xs:documentation)'/> <xsl:call-template name="checkVocabulary">
             <xsl:with-param name="nameToCheck" select="../@name" />
         </xsl:call-template>
         <xsl:if test="(count(../@minOccurs) > 0) and (../@minOccurs = 0)">

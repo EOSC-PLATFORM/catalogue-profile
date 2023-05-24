@@ -21,7 +21,7 @@ Catalogue
      - A high-level description of the Catalogue in fairly non-technical terms, with the vision, mission, objectives, background, experience.
      - Y
    * - hostingLegalEntity
-     - Name of the organisation legally hosting (housing) the Catalogue or its coordinating centre.:doc:`Vocabulary <_vocabularies/PROVIDER_HOSTING_LEGAL_ENTITY>`.
+     - Name of the organisation legally hosting (housing) the Catalogue or its coordinating centre. :doc:`Vocabulary <_vocabularies/PROVIDER_HOSTING_LEGAL_ENTITY>`.
         
      - N
    * - id
@@ -31,11 +31,11 @@ Catalogue
      - A Y/N question to define whether the (Multi-Provider Regional or Thematic) Catalogue is owned by a Legal Entity or not.
      - Y
    * - legalStatus
-     - Legal status of the (Multi-Provider Regional or Thematic ) Catalogue Owner. The legal status is usually noted in the registration act/statutes. For independent legal entities (1) - legal status of the Catalogue. For embedded Catalogues (2) - legal status of the hosting legal entity. It is also possible to select Not a legal entity.:doc:`Vocabulary <_vocabularies/PROVIDER_LEGAL_STATUS>`.
+     - Legal status of the (Multi-Provider Regional or Thematic ) Catalogue Owner. The legal status is usually noted in the registration act/statutes. For independent legal entities (1) - legal status of the Catalogue. For embedded Catalogues (2) - legal status of the hosting legal entity. It is also possible to select Not a legal entity. :doc:`Vocabulary <_vocabularies/PROVIDER_LEGAL_STATUS>`.
         
      - N
    * - location
-     - Physical location of the Catalogue.:doc:`Vocabulary <_vocabularies/COUNTRY>`.
+     - Physical location of the Catalogue. :doc:`Vocabulary <_vocabularies/COUNTRY>`.
         
      - Y
    * - logo
@@ -51,7 +51,7 @@ Catalogue
      - Full Name of the (Multi-Provider Regional or Thematic) Catalogue.
      - Y
    * - networks
-     - Catalogues that are members of networks should list those networks here.:doc:`Vocabulary <_vocabularies/PROVIDER_NETWORK>`.
+     - Catalogues that are members of networks should list those networks here. :doc:`Vocabulary <_vocabularies/PROVIDER_NETWORK>`.
         
      - N
    * - participatingCountries
