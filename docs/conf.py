@@ -30,7 +30,7 @@ copyright = '2022, EOSC'
 author = 'EOSC profile strategy team'
 
 # The full version, including alpha/beta/rc tags
-release = '4.0'
+release = '4.1-rc'
 
 
 # -- General configuration ---------------------------------------------------
@@ -70,11 +70,21 @@ pygments_style = 'sphinx'
 # a list of builtin themes.
 #
 #html_theme = 'alabaster'
+html_theme = "sphinx_rtd_theme"
 
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
 # so a file named "default.css" will overwrite the builtin "default.css".
 html_static_path = ['_static']
+
+html_css_files = [
+    'jquery.dataTables.min.css'
+]
+
+html_js_files = [
+    'jquery.dataTables.min.js',
+    'main.js',
+]
 
 # Output file base name for HTML help builder.
 htmlhelp_basename = 'EOSCcatalogueProfile'
