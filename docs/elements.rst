@@ -1,16 +1,16 @@
 
 .. _catalogue:
 
+The following sections of Catalogue provide detailed information on the elements.
+
 Catalogue
 =========
-
-The following sections of EOSC Catalogue provide detailed information on the elements.
 
         
 1. Basic
 ########
 
-.. list-table:: EOSC Provider Profile Elements of "Basic" block
+.. list-table:: EOSC Catalogue Profile Elements of "Basic" block
    :widths: 25 50 10
    :header-rows: 1
 
@@ -18,28 +18,37 @@ The following sections of EOSC Catalogue provide detailed information on the ele
      - Description
      - Mandatory  
    * - name
-     - Full Name of the Provider/Organisation offering the resource and acting as main contact point.
+     - Full Name of the (Multi-Provider Regional or Thematic) Catalogue.
      - Y
    * - abbreviation
-     - An abbreviation of the Provider Name as assigned by the Provider.
+     - An abbreviation of the (Multi-Provider Regional or Thematic) Catalogue Name.
      - Y
    * - website
-     - Website with information about the Provider.
+     - Website with information about the (Multi-Provider Regional or Thematic) Catalogue.
      - Y
    * - legalEntity
-     - A Y/N question to define whether the Provider is a Legal Entity or not.
+     - A Y/N question to define whether the (Multi-Provider Regional or Thematic) Catalogue is owned by a Legal Entity or not.
      - Y
    * - legalStatus
-     - Legal status of the Provider. The legal status is usually noted in the registration act/statutes. For independent legal entities (1) - legal status of the Provider. For embedded providers (2) - legal status of the hosting legal entity. It is also possible to select Not a legal entity. :doc:`Vocabulary <_vocabularies/PROVIDER_LEGAL_STATUS>`.
+     - Legal status of the (Multi-Provider Regional or Thematic ) Catalogue Owner. The legal status is usually noted in the registration act/statutes. For independent legal entities (1) - legal status of the Catalogue. For embedded Catalogues (2) - legal status of the hosting legal entity. It is also possible to select Not a legal entity. :doc:`Vocabulary <_vocabularies/PROVIDER_LEGAL_STATUS>`.
      - N
    * - hostingLegalEntity
-     - Name of the organisation/institution legally hosting (housing) the provider/research infrastructure or its coordinating centre. A distinction is made between: (1) research infrastructures that are self-standing and have a defined and distinct legal entity, (2) research infrastructures that are embedded into another institution which is a legal entity (such as a university, a research organisation, etc.). If (1) - name of the research infrastructure, If (2) - name of the hosting organisation. :doc:`Vocabulary <_vocabularies/PROVIDER_HOSTING_LEGAL_ENTITY>`.
+     - Name of the organisation legally hosting (housing) the Catalogue or its coordinating centre. :doc:`Vocabulary <_vocabularies/PROVIDER_HOSTING_LEGAL_ENTITY>`.
      - N
+   * - 
+     - 
+     - Y
+   * - 
+     - 
+     - Y
+   * - 
+     - 
+     - Y
 
 2. Marketing
 ############
 
-.. list-table:: EOSC Provider Profile Elements of "Marketing" block
+.. list-table:: EOSC Catalogue Profile Elements of "Marketing" block
    :widths: 30 50 20
    :header-rows: 1
 
@@ -47,10 +56,10 @@ The following sections of EOSC Catalogue provide detailed information on the ele
      - Description
      - Mandatory        
    * - description
-     - A high-level description of the Provider in fairly non-technical terms, with the vision, mission, objectives, background, experience.
+     - A high-level description of the Catalogue in fairly non-technical terms, with the vision, mission, objectives, background, experience.
      - Y
    * - logo
-     - Link to the logo/visual identity of the Provider.
+     - Link to the logo/visual identity of the Catalogue.
      - Y
    * - multimedia
      - Link to video, slideshow, photos, screenshots with details of the Provider.
@@ -59,7 +68,7 @@ The following sections of EOSC Catalogue provide detailed information on the ele
 3. Classification
 #################
 
-.. list-table:: EOSC Provider Profile Elements of "Classification" block
+.. list-table:: EOSC Catalogue Profile Elements of "Classification" block
    :widths: 25 50 10
    :header-rows: 1
 
@@ -73,16 +82,13 @@ The following sections of EOSC Catalogue provide detailed information on the ele
      - The subbranch of science, scientific subdicipline that is related to the Resource.
      - Y
    * - tags
-     - Keywords associated to the Provider to simplify search by relevant keywords.
-     - N
-   * - structureType
-     - 
+     - Keywords associated to the Catalogue to simplify search by relevant keywords.
      - N
 
 4. Location
 ###########
 
-.. list-table:: EOSC Provider Profile Elements of "Location" block
+.. list-table:: EOSC Catalogue Profile Elements of "Location" block
    :widths: 25 50 10
    :header-rows: 1
 
@@ -108,7 +114,7 @@ The following sections of EOSC Catalogue provide detailed information on the ele
 5. Contact
 ##########
 
-.. list-table:: EOSC Provider Profile Elements of "Contact" block - main contact
+.. list-table:: EOSC Catalogue Profile Elements of "Contact" block - main contact
    :widths: 25 50 10
    :header-rows: 1
 
@@ -116,7 +122,7 @@ The following sections of EOSC Catalogue provide detailed information on the ele
      - Description
      - Mandatory        
    * - mainContact
-     - Provider's main contact info.
+     - Catalogue's main contact info.
      - Y
    * - firstName
      - First Name of the Provider's main contact person/Provider manager.
@@ -134,7 +140,7 @@ The following sections of EOSC Catalogue provide detailed information on the ele
      - Position of the Provider's main contact person/Provider manager.
      - N
 
-.. list-table:: EOSC Provider Profile Elements of "Contact" block - public contact
+.. list-table:: EOSC Catalogue Profile Elements of "Contact" block - public contact
    :widths: 25 50 10
    :header-rows: 1
 
@@ -142,7 +148,7 @@ The following sections of EOSC Catalogue provide detailed information on the ele
      - Description
      - Mandatory        
    * - publicContacts
-     - List of the Provider's public contacts info.
+     - List of the Catalogue's public contacts info.
      - Y
    * - firstName
      - First Name of the Provider's main contact person/Provider manager.
@@ -160,24 +166,7 @@ The following sections of EOSC Catalogue provide detailed information on the ele
      - Position of the Provider's main contact person/Provider manager.
      - N
 
-6. Maturity
-###########
-
-.. list-table:: EOSC Provider Profile Elements of "Maturity" block
-   :widths: 25 50 10
-   :header-rows: 1
-
-   * - Element name
-     - Description
-     - Mandatory        
-   * - lifeCycleStatus
-     - Current status of the Provider life-cycle. :doc:`Vocabulary <_vocabularies/PROVIDER_LIFE_CYCLE_STATUS>`.
-     - N
-   * - certifications
-     - List of certifications obtained for the Provider (including the certification body, the certificate number or URL if available).
-     - N
-
-7. Dependencies
+6. Dependencies
 ###############
 
 .. list-table:: EOSC Provider Profile Elements of "Dependencies" block
@@ -188,48 +177,16 @@ The following sections of EOSC Catalogue provide detailed information on the ele
      - Description
      - Mandatory        
    * - participatingCountries
-     - Providers/Research Infrastructures that are funded by several countries should list here all supporting countries (including the Coordinating country). :doc:`Vocabulary <_vocabularies/COUNTRY>`.
+     - Catalogues that are funded/supported by several countries should list here all supporting countries (including the Coordinating country). :doc:`Vocabulary <_vocabularies/COUNTRY>`.
      - N
    * - affiliations
-     - Providers that are members or affiliated or associated with other organisations should list those organisations here.
+     - Catalogues that are members or affiliated or associated with other organisations should list those organisations here.
      - N
    * - networks
-     - Providers that are members of networks should list those networks here. :doc:`Vocabulary <_vocabularies/PROVIDER_NETWORK>`.
-     - N
-   * - catalogueId
-     - The Catalogue this Provider is originally registered at.
+     - Catalogues that are members of networks should list those networks here. :doc:`Vocabulary <_vocabularies/PROVIDER_NETWORK>`.
      - N
 
-8. Other
-########
-
-.. list-table:: EOSC Provider Profile Elements of "Other" block
-   :widths: 25 50 10
-   :header-rows: 1
-
-   * - Element name
-     - Description
-     - Mandatory        
-   * - esfriDomains
-     - ESFRI domain classification. :doc:`Vocabulary <_vocabularies/PROVIDER_ESFRI_DOMAIN>`.
-     - N
-   * - esfriType
-     - If the research infrastructure is (part of) an ESFRI project indicate how the RI participates: a) is a node of an ESFRI project, b) is an ESFRI project, c) is an ESFRI landmark, d) is not an ESFRI project or landmark. :doc:`Vocabulary <_vocabularies/PROVIDER_ESFRI_TYPE>`.
-     - N
-   * - merilScientificDomains
-     - MERIL scientific domain / subdomain classification. Vocabularies: :doc:`Domain <_vocabularies/PROVIDER_MERIL_SCIENTIFIC_DOMAIN>` / :doc:`Subdomain <_vocabularies/PROVIDER_MERIL_SCIENTIFIC_SUBDOMAIN>`.
-     - N
-   * - areasOfActivity
-     - Basic research, Applied research or Technological development. :doc:`Vocabulary <_vocabularies/PROVIDER_AREA_OF_ACTIVITY>`.
-     - N
-   * - societalGrandChallenges
-     - Provider’s participation in the Grand Societal Challenges defined by the European Commission. :doc:`Vocabulary <_vocabularies/PROVIDER_SOCIETAL_GRAND_CHALLENGE>`.
-     - N
-   * - nationalRoadmaps
-     - Provider's participation in a national roadmap.
-     - N
-
-9. Admins
+7. Admins
 #########
 
 no declaration in XSD schema

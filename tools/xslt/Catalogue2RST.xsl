@@ -10,19 +10,19 @@
     <xsl:template match="/">
 .. _catalogue:
 
+The following sections of Catalogue provide detailed information on the elements.
+
 Catalogue
 =========
-
-The following sections of EOSC Catalogue provide detailed information on the elements.
 
         <xsl:call-template name="block1"><xsl:with-param name="blockName" select="'Basic'" /></xsl:call-template>
         <xsl:call-template name="block2"><xsl:with-param name="blockName" select="'Marketing'" /></xsl:call-template>
         <xsl:call-template name="block3"><xsl:with-param name="blockName" select="'Classification'" /></xsl:call-template>
         <xsl:call-template name="block4"><xsl:with-param name="blockName" select="'Location'" /></xsl:call-template>
         <xsl:call-template name="block5"><xsl:with-param name="blockName" select="'Contact'" /></xsl:call-template>
-        <xsl:call-template name="block6"><xsl:with-param name="blockName" select="'Maturity'" /></xsl:call-template>
+        <!-- xsl:call-template name="block6"><xsl:with-param name="blockName" select="'Maturity'" /></xsl:call-template -->
         <xsl:call-template name="block7"><xsl:with-param name="blockName" select="'Dependencies'" /></xsl:call-template>
-        <xsl:call-template name="block8"><xsl:with-param name="blockName" select="'Other'" /></xsl:call-template>
+        <!-- xsl:call-template name="block8"><xsl:with-param name="blockName" select="'Other'" /></xsl:call-template -->
         <xsl:call-template name="block9"><xsl:with-param name="blockName" select="'Admins'" /></xsl:call-template>
     </xsl:template>
 
@@ -31,21 +31,24 @@ The following sections of EOSC Catalogue provide detailed information on the ele
 1. Basic
 ########
 
-.. list-table:: EOSC Provider Profile Elements of "<xsl:value-of select="$blockName"/>" block
+.. list-table:: EOSC Catalogue Profile Elements of "<xsl:value-of select="$blockName"/>" block
    :widths: 25 50 10
    :header-rows: 1
 
    * - Element name
      - Description
      - Mandatory  <xsl:call-template name="selectSection">
-        <xsl:with-param name="entity" select="'provider'" />
+        <xsl:with-param name="entity" select="'catalogue'" />
         <xsl:with-param name="keyName" select="'name'" />
     </xsl:call-template>
-        <xsl:call-template name="selectSection"><xsl:with-param name="entity" select="'provider'" /><xsl:with-param name="keyName" select="'abbreviation'" /></xsl:call-template>
-        <xsl:call-template name="selectSection"><xsl:with-param name="entity" select="'provider'" /><xsl:with-param name="keyName" select="'website'" /></xsl:call-template>
-        <xsl:call-template name="selectSection"><xsl:with-param name="entity" select="'provider'" /><xsl:with-param name="keyName" select="'legalEntity'" /></xsl:call-template>
-        <xsl:call-template name="selectSection"><xsl:with-param name="entity" select="'provider'" /><xsl:with-param name="keyName" select="'legalStatus'" /></xsl:call-template>
-        <xsl:call-template name="selectSection"><xsl:with-param name="entity" select="'provider'" /><xsl:with-param name="keyName" select="'hostingLegalEntity'" /></xsl:call-template>
+        <xsl:call-template name="selectSection"><xsl:with-param name="entity" select="'catalogue'" /><xsl:with-param name="keyName" select="'abbreviation'" /></xsl:call-template>
+        <xsl:call-template name="selectSection"><xsl:with-param name="entity" select="'catalogue'" /><xsl:with-param name="keyName" select="'website'" /></xsl:call-template>
+        <xsl:call-template name="selectSection"><xsl:with-param name="entity" select="'catalogue'" /><xsl:with-param name="keyName" select="'legalEntity'" /></xsl:call-template>
+        <xsl:call-template name="selectSection"><xsl:with-param name="entity" select="'catalogue'" /><xsl:with-param name="keyName" select="'legalStatus'" /></xsl:call-template>
+        <xsl:call-template name="selectSection"><xsl:with-param name="entity" select="'catalogue'" /><xsl:with-param name="keyName" select="'hostingLegalEntity'" /></xsl:call-template>
+        <xsl:call-template name="selectSection"><xsl:with-param name="entity" select="'catalogue'" /><xsl:with-param name="keyName" select="'inclusionCriteria'" /></xsl:call-template>
+        <xsl:call-template name="selectSection"><xsl:with-param name="entity" select="'catalogue'" /><xsl:with-param name="keyName" select="'validationProcess'" /></xsl:call-template>
+        <xsl:call-template name="selectSection"><xsl:with-param name="entity" select="'catalogue'" /><xsl:with-param name="keyName" select="'endOfLife'" /></xsl:call-template>
     </xsl:template>
 
     <xsl:template name="block2">
@@ -54,17 +57,17 @@ The following sections of EOSC Catalogue provide detailed information on the ele
 2. Marketing
 ############
 
-.. list-table:: EOSC Provider Profile Elements of "<xsl:value-of select="$blockName"/>" block
+.. list-table:: EOSC Catalogue Profile Elements of "<xsl:value-of select="$blockName"/>" block
    :widths: 30 50 20
    :header-rows: 1
 
    * - Element name
      - Description
      - Mandatory        <xsl:call-template name="selectSection">
-        <xsl:with-param name="entity" select="'provider'" /><xsl:with-param name="keyName" select="'description'" />
+        <xsl:with-param name="entity" select="'catalogue'" /><xsl:with-param name="keyName" select="'description'" />
     </xsl:call-template>
-        <xsl:call-template name="selectSection"><xsl:with-param name="entity" select="'provider'" /><xsl:with-param name="keyName" select="'logo'" /></xsl:call-template>
-        <xsl:call-template name="selectSection"><xsl:with-param name="entity" select="'provider'" /><xsl:with-param name="keyName" select="'multimedia'" /></xsl:call-template>
+        <xsl:call-template name="selectSection"><xsl:with-param name="entity" select="'catalogue'" /><xsl:with-param name="keyName" select="'logo'" /></xsl:call-template>
+        <xsl:call-template name="selectSection"><xsl:with-param name="entity" select="'catalogue'" /><xsl:with-param name="keyName" select="'multimedia'" /></xsl:call-template>
         <!--
                 <xsl:call-template name="selectSection"><xsl:with-param name="keyName" select="'multimediaUrl'" /></xsl:call-template>
                 <xsl:call-template name="selectSection"><xsl:with-param name="keyName" select="'multimediaName'" /></xsl:call-template>
@@ -77,19 +80,19 @@ The following sections of EOSC Catalogue provide detailed information on the ele
 3. Classification
 #################
 
-.. list-table:: EOSC Provider Profile Elements of "<xsl:value-of select="$blockName"/>" block
+.. list-table:: EOSC Catalogue Profile Elements of "<xsl:value-of select="$blockName"/>" block
    :widths: 25 50 10
    :header-rows: 1
 
    * - Element name
      - Description
      - Mandatory        <xsl:call-template name="selectSection">
-        <xsl:with-param name="entity" select="'provider'" /><xsl:with-param name="keyName" select="'scientificDomains'" />
+        <xsl:with-param name="entity" select="'catalogue'" /><xsl:with-param name="keyName" select="'scientificDomains'" />
     </xsl:call-template>
         <xsl:call-template name="selectSection"><xsl:with-param name="entity" select="'serviceProviderDomain'" /><xsl:with-param name="keyName" select="'scientificSubdomain'" /></xsl:call-template>
-        <xsl:call-template name="selectSection"><xsl:with-param name="entity" select="'provider'" /><xsl:with-param name="keyName" select="'tags'" /></xsl:call-template>
-        <xsl:call-template name="selectSection"><xsl:with-param name="entity" select="'provider'" /><xsl:with-param name="keyName" select="'structureType'" /></xsl:call-template>
+        <xsl:call-template name="selectSection"><xsl:with-param name="entity" select="'catalogue'" /><xsl:with-param name="keyName" select="'tags'" /></xsl:call-template>
         <!--
+        <xsl:call-template name="selectSection"><xsl:with-param name="entity" select="'catalogue'" /><xsl:with-param name="keyName" select="'structureType'" /></xsl:call-template>
                 <xsl:call-template name="selectSection"><xsl:with-param name="keyName" select="'multimediaName'" /></xsl:call-template>
         -->
     </xsl:template>
@@ -100,7 +103,7 @@ The following sections of EOSC Catalogue provide detailed information on the ele
 4. Location
 ###########
 
-.. list-table:: EOSC Provider Profile Elements of "<xsl:value-of select="$blockName"/>" block
+.. list-table:: EOSC Catalogue Profile Elements of "<xsl:value-of select="$blockName"/>" block
    :widths: 25 50 10
    :header-rows: 1
 
@@ -125,14 +128,14 @@ The following sections of EOSC Catalogue provide detailed information on the ele
 5. Contact
 ##########
 
-.. list-table:: EOSC Provider Profile Elements of "<xsl:value-of select="$blockName"/>" block - main contact
+.. list-table:: EOSC Catalogue Profile Elements of "<xsl:value-of select="$blockName"/>" block - main contact
    :widths: 25 50 10
    :header-rows: 1
 
    * - Element name
      - Description
      - Mandatory        <xsl:call-template name="selectSection">
-        <xsl:with-param name="entity" select="'provider'" /><xsl:with-param name="keyName" select="'mainContact'" />
+        <xsl:with-param name="entity" select="'catalogue'" /><xsl:with-param name="keyName" select="'mainContact'" />
     </xsl:call-template>
         <xsl:call-template name="selectSection"><xsl:with-param name="entity" select="'providerMainContact'" /><xsl:with-param name="keyName" select="'firstName'" /></xsl:call-template>
         <xsl:call-template name="selectSection"><xsl:with-param name="entity" select="'providerMainContact'" /><xsl:with-param name="keyName" select="'lastName'" /></xsl:call-template>
@@ -140,14 +143,14 @@ The following sections of EOSC Catalogue provide detailed information on the ele
         <xsl:call-template name="selectSection"><xsl:with-param name="entity" select="'providerMainContact'" /><xsl:with-param name="keyName" select="'phone'" /></xsl:call-template>
         <xsl:call-template name="selectSection"><xsl:with-param name="entity" select="'providerMainContact'" /><xsl:with-param name="keyName" select="'position'" /></xsl:call-template>
 
-.. list-table:: EOSC Provider Profile Elements of "<xsl:value-of select="$blockName"/>" block - public contact
+.. list-table:: EOSC Catalogue Profile Elements of "<xsl:value-of select="$blockName"/>" block - public contact
    :widths: 25 50 10
    :header-rows: 1
 
    * - Element name
      - Description
      - Mandatory        <xsl:call-template name="selectSection">
-        <xsl:with-param name="entity" select="'provider'" /><xsl:with-param name="keyName" select="'publicContacts'" />
+        <xsl:with-param name="entity" select="'catalogue'" /><xsl:with-param name="keyName" select="'publicContacts'" />
     </xsl:call-template>
         <xsl:call-template name="selectSection"><xsl:with-param name="entity" select="'providerPublicContact'" /><xsl:with-param name="keyName" select="'firstName'" /></xsl:call-template>
         <xsl:call-template name="selectSection"><xsl:with-param name="entity" select="'providerPublicContact'" /><xsl:with-param name="keyName" select="'lastName'" /></xsl:call-template>
@@ -165,7 +168,7 @@ The following sections of EOSC Catalogue provide detailed information on the ele
 6. Maturity
 ###########
 
-.. list-table:: EOSC Provider Profile Elements of "<xsl:value-of select="$blockName"/>" block
+.. list-table:: EOSC Catalogue Profile Elements of "<xsl:value-of select="$blockName"/>" block
    :widths: 25 50 10
    :header-rows: 1
 
@@ -181,7 +184,7 @@ The following sections of EOSC Catalogue provide detailed information on the ele
     <xsl:template name="block7">
         <xsl:param name="blockName" />
 
-7. Dependencies
+6. Dependencies
 ###############
 
 .. list-table:: EOSC Provider Profile Elements of "<xsl:value-of select="$blockName"/>" block
@@ -191,17 +194,17 @@ The following sections of EOSC Catalogue provide detailed information on the ele
    * - Element name
      - Description
      - Mandatory        <xsl:call-template name="selectSection">
-        <xsl:with-param name="entity" select="'provider'" /><xsl:with-param name="keyName" select="'participatingCountries'" />
+        <xsl:with-param name="entity" select="'catalogue'" /><xsl:with-param name="keyName" select="'participatingCountries'" />
     </xsl:call-template>
-        <xsl:call-template name="selectSection"><xsl:with-param name="entity" select="'provider'" /><xsl:with-param name="keyName" select="'affiliations'" /></xsl:call-template>
-        <xsl:call-template name="selectSection"><xsl:with-param name="entity" select="'provider'" /><xsl:with-param name="keyName" select="'networks'" /></xsl:call-template>
-        <xsl:call-template name="selectSection"><xsl:with-param name="entity" select="'provider'" /><xsl:with-param name="keyName" select="'catalogueId'" /></xsl:call-template>
+        <xsl:call-template name="selectSection"><xsl:with-param name="entity" select="'catalogue'" /><xsl:with-param name="keyName" select="'affiliations'" /></xsl:call-template>
+        <xsl:call-template name="selectSection"><xsl:with-param name="entity" select="'catalogue'" /><xsl:with-param name="keyName" select="'networks'" /></xsl:call-template>
+        <!-- xsl:call-template name="selectSection"><xsl:with-param name="entity" select="'provider'" /><xsl:with-param name="keyName" select="'catalogueId'" /></xsl:call-template -->
     </xsl:template>
 
     <xsl:template name="block8">
         <xsl:param name="blockName" />
 
-8. Other
+7. Other
 ########
 
 .. list-table:: EOSC Provider Profile Elements of "<xsl:value-of select="$blockName"/>" block
@@ -223,7 +226,7 @@ The following sections of EOSC Catalogue provide detailed information on the ele
     <xsl:template name="block9">
         <xsl:param name="blockName" />
 
-9. Admins
+7. Admins
 #########
 
 no declaration in XSD schema
