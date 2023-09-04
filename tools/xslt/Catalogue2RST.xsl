@@ -46,10 +46,10 @@ Catalogue
         <xsl:call-template name="selectSection"><xsl:with-param name="entity" select="'catalogue'" /><xsl:with-param name="keyName" select="'legalEntity'" /></xsl:call-template>
         <xsl:call-template name="selectSection"><xsl:with-param name="entity" select="'catalogue'" /><xsl:with-param name="keyName" select="'legalStatus'" /></xsl:call-template>
         <xsl:call-template name="selectSection"><xsl:with-param name="entity" select="'catalogue'" /><xsl:with-param name="keyName" select="'hostingLegalEntity'" /></xsl:call-template>
-        <xsl:call-template name="selectSection"><xsl:with-param name="entity" select="'catalogue'" /><xsl:with-param name="keyName" select="'inclusionCriteria'" /></xsl:call-template>
+<!--        <xsl:call-template name="selectSection"><xsl:with-param name="entity" select="'catalogue'" /><xsl:with-param name="keyName" select="'inclusionCriteria'" /></xsl:call-template>
         <xsl:call-template name="selectSection"><xsl:with-param name="entity" select="'catalogue'" /><xsl:with-param name="keyName" select="'validationProcess'" /></xsl:call-template>
         <xsl:call-template name="selectSection"><xsl:with-param name="entity" select="'catalogue'" /><xsl:with-param name="keyName" select="'endOfLife'" /></xsl:call-template>
-    </xsl:template>
+-->    </xsl:template>
 
     <xsl:template name="block2">
         <xsl:param name="blockName" />
