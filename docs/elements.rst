@@ -35,15 +35,6 @@ Catalogue
    * - hostingLegalEntity
      - Name of the organisation legally hosting (housing) the Catalogue or its coordinating centre. :doc:`Vocabulary <_vocabularies/PROVIDER_HOSTING_LEGAL_ENTITY>`.
      - N
-   * - 
-     - 
-     - Y
-   * - 
-     - 
-     - Y
-   * - 
-     - 
-     - Y
 
 2. Marketing
 ############
