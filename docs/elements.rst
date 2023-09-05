@@ -108,6 +108,11 @@ Catalogue
      - tns:serviceProviderDomain
      - 1
      - N
+   * - scientificDomain
+     - The branch of science, scientific discipline that is related to the Resource.
+     - string
+     - 1
+     - Y
    * - scientificSubdomain
      - The subbranch of science, scientific subdicipline that is related to the Resource.
      - string
