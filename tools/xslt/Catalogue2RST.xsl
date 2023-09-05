@@ -57,10 +57,10 @@ Catalogue
     </xsl:call-template>
         <xsl:call-template name="selectSection"><xsl:with-param name="entity" select="'catalogue'" /><xsl:with-param name="keyName" select="'logo'" /></xsl:call-template>
         <xsl:call-template name="selectSection"><xsl:with-param name="entity" select="'catalogue'" /><xsl:with-param name="keyName" select="'multimedia'" /></xsl:call-template>
-        <!--
-                <xsl:call-template name="selectSection"><xsl:with-param name="keyName" select="'multimediaUrl'" /></xsl:call-template>
-                <xsl:call-template name="selectSection"><xsl:with-param name="keyName" select="'multimediaName'" /></xsl:call-template>
-        -->
+
+                <xsl:call-template name="selectSection"><xsl:with-param name="entity" select="'multimediaPair'" /><xsl:with-param name="keyName" select="'multimediaURL'" /></xsl:call-template>
+                <xsl:call-template name="selectSection"><xsl:with-param name="entity" select="'multimediaPair'" /><xsl:with-param name="keyName" select="'multimediaName'" /></xsl:call-template>
+
     </xsl:template>
 
     <xsl:template name="block3">

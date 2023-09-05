@@ -79,6 +79,16 @@ Catalogue
      - tns:multimediaPair
      - Multiple
      - N
+   * - multimediaURL
+     - Link to video, slideshow, photos, screenshots with details of the Provider.
+     - anyURI
+     - 1
+     - Y
+   * - multimediaName
+     - Short description of the Multimedia content.
+     - string
+     - 1
+     - N
 
 3. Classification
 #################
