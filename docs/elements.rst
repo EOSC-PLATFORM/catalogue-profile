@@ -11,7 +11,7 @@ Catalogue
 ########
 
 .. list-table:: EOSC Catalogue Profile Elements of "Basic" block
-   :widths: 25 50 10
+   :widths: 25 50 10 10 10
    :header-rows: 1
         
    * - Element name

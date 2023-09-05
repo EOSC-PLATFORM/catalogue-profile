@@ -32,7 +32,7 @@ Catalogue
 ########
 
 .. list-table:: EOSC Catalogue Profile Elements of "<xsl:value-of select="$blockName"/>" block
-   :widths: 25 50 10
+   :widths: 25 50 10 10 10
    :header-rows: 1
         <xsl:call-template name="tableHead"/><xsl:call-template name="selectSection">
         <xsl:with-param name="entity" select="'catalogue'" />
