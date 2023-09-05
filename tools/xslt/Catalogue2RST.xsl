@@ -31,10 +31,7 @@ Catalogue
 1. Basic
 ########
 
-.. list-table:: EOSC Catalogue Profile Elements of "<xsl:value-of select="$blockName"/>" block
-   :widths: 25 50 10 10 10
-   :header-rows: 1
-        <xsl:call-template name="tableHead"/><xsl:call-template name="selectSection">
+        <xsl:call-template name="tableHead"><xsl:with-param name="blockName" select="$blockName" /></xsl:call-template><xsl:call-template name="selectSection">
         <xsl:with-param name="entity" select="'catalogue'" />
         <xsl:with-param name="keyName" select="'name'" />
     </xsl:call-template>
@@ -55,10 +52,7 @@ Catalogue
 2. Marketing
 ############
 
-.. list-table:: EOSC Catalogue Profile Elements of "<xsl:value-of select="$blockName"/>" block
-   :widths: 30 50 20
-   :header-rows: 1
-        <xsl:call-template name="tableHead"/><xsl:call-template name="selectSection">
+        <xsl:call-template name="tableHead"><xsl:with-param name="blockName" select="$blockName" /></xsl:call-template><xsl:call-template name="selectSection">
         <xsl:with-param name="entity" select="'catalogue'" /><xsl:with-param name="keyName" select="'description'" />
     </xsl:call-template>
         <xsl:call-template name="selectSection"><xsl:with-param name="entity" select="'catalogue'" /><xsl:with-param name="keyName" select="'logo'" /></xsl:call-template>
@@ -75,10 +69,7 @@ Catalogue
 3. Classification
 #################
 
-.. list-table:: EOSC Catalogue Profile Elements of "<xsl:value-of select="$blockName"/>" block
-   :widths: 25 50 10
-   :header-rows: 1
-        <xsl:call-template name="tableHead"/><xsl:call-template name="selectSection">
+        <xsl:call-template name="tableHead"><xsl:with-param name="blockName" select="$blockName" /></xsl:call-template><xsl:call-template name="selectSection">
         <xsl:with-param name="entity" select="'catalogue'" /><xsl:with-param name="keyName" select="'scientificDomains'" />
     </xsl:call-template>
         <xsl:call-template name="selectSection"><xsl:with-param name="entity" select="'serviceProviderDomain'" /><xsl:with-param name="keyName" select="'scientificSubdomain'" /></xsl:call-template>
@@ -95,10 +86,7 @@ Catalogue
 4. Location
 ###########
 
-.. list-table:: EOSC Catalogue Profile Elements of "<xsl:value-of select="$blockName"/>" block
-   :widths: 25 50 10
-   :header-rows: 1
-        <xsl:call-template name="tableHead"/><xsl:call-template name="selectSection">
+        <xsl:call-template name="tableHead"><xsl:with-param name="blockName" select="$blockName" /></xsl:call-template><xsl:call-template name="selectSection">
         <xsl:with-param name="entity" select="'providerLocation'" /><xsl:with-param name="keyName" select="'streetNameAndNumber'" />
     </xsl:call-template>
         <xsl:call-template name="selectSection"><xsl:with-param name="entity" select="'providerLocation'" /><xsl:with-param name="keyName" select="'postalCode'" /></xsl:call-template>
@@ -117,10 +105,7 @@ Catalogue
 5. Contact
 ##########
 
-.. list-table:: EOSC Catalogue Profile Elements of "<xsl:value-of select="$blockName"/>" block - main contact
-   :widths: 25 50 10
-   :header-rows: 1
-        <xsl:call-template name="tableHead"/><xsl:call-template name="selectSection">
+        <xsl:call-template name="tableHead"><xsl:with-param name="blockName" select="$blockName" /></xsl:call-template><xsl:call-template name="selectSection">
         <xsl:with-param name="entity" select="'catalogue'" /><xsl:with-param name="keyName" select="'mainContact'" />
     </xsl:call-template>
         <xsl:call-template name="selectSection"><xsl:with-param name="entity" select="'providerMainContact'" /><xsl:with-param name="keyName" select="'firstName'" /></xsl:call-template>
@@ -129,10 +114,7 @@ Catalogue
         <xsl:call-template name="selectSection"><xsl:with-param name="entity" select="'providerMainContact'" /><xsl:with-param name="keyName" select="'phone'" /></xsl:call-template>
         <xsl:call-template name="selectSection"><xsl:with-param name="entity" select="'providerMainContact'" /><xsl:with-param name="keyName" select="'position'" /></xsl:call-template>
 
-.. list-table:: EOSC Catalogue Profile Elements of "<xsl:value-of select="$blockName"/>" block - public contact
-   :widths: 25 50 10
-   :header-rows: 1
-        <xsl:call-template name="tableHead"/><xsl:call-template name="selectSection">
+        <xsl:call-template name="tableHead"><xsl:with-param name="blockName" select="$blockName" /></xsl:call-template><xsl:call-template name="selectSection">
         <xsl:with-param name="entity" select="'catalogue'" /><xsl:with-param name="keyName" select="'publicContacts'" />
     </xsl:call-template>
         <xsl:call-template name="selectSection"><xsl:with-param name="entity" select="'providerPublicContact'" /><xsl:with-param name="keyName" select="'firstName'" /></xsl:call-template>
@@ -151,10 +133,7 @@ Catalogue
 6. Maturity
 ###########
 
-.. list-table:: EOSC Catalogue Profile Elements of "<xsl:value-of select="$blockName"/>" block
-   :widths: 25 50 10
-   :header-rows: 1
-        <xsl:call-template name="tableHead"/><xsl:call-template name="selectSection">
+        <xsl:call-template name="tableHead"><xsl:with-param name="blockName" select="$blockName" /></xsl:call-template><xsl:call-template name="selectSection">
         <xsl:with-param name="entity" select="'provider'" /><xsl:with-param name="keyName" select="'lifeCycleStatus'" />
     </xsl:call-template>
         <xsl:call-template name="selectSection"><xsl:with-param name="entity" select="'provider'" /><xsl:with-param name="keyName" select="'certifications'" /></xsl:call-template>
@@ -167,10 +146,7 @@ Catalogue
 6. Dependencies
 ###############
 
-.. list-table:: EOSC Provider Profile Elements of "<xsl:value-of select="$blockName"/>" block
-   :widths: 25 50 10
-   :header-rows: 1
-        <xsl:call-template name="tableHead"/><xsl:call-template name="selectSection">
+        <xsl:call-template name="tableHead"><xsl:with-param name="blockName" select="$blockName" /></xsl:call-template><xsl:call-template name="selectSection">
         <xsl:with-param name="entity" select="'catalogue'" /><xsl:with-param name="keyName" select="'participatingCountries'" />
     </xsl:call-template>
         <xsl:call-template name="selectSection"><xsl:with-param name="entity" select="'catalogue'" /><xsl:with-param name="keyName" select="'affiliations'" /></xsl:call-template>
@@ -187,7 +163,7 @@ Catalogue
 .. list-table:: EOSC Provider Profile Elements of "<xsl:value-of select="$blockName"/>" block
    :widths: 25 50 10
    :header-rows: 1
-    <xsl:call-template name="tableHead"/>
+    <xsl:call-template name="tableHead"><xsl:with-param name="blockName" select="$blockName" /></xsl:call-template>
     <xsl:call-template name="selectSection">
         <xsl:with-param name="entity" select="'provider'" /><xsl:with-param name="keyName" select="'esfriDomains'" />
     </xsl:call-template>
@@ -220,6 +196,11 @@ no declaration in XSD schema
                 -->
     </xsl:template>
 <xsl:template name="tableHead">
+    <xsl:param name="blockName" />
+.. list-table:: EOSC Catalogue Profile Elements of "<xsl:value-of select="$blockName"/>" block
+    :widths: 25 50 10 10 10
+    :header-rows: 1
+
    * - Element name
      - Description
      - Type

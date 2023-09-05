@@ -10,10 +10,11 @@ Catalogue
 1. Basic
 ########
 
-.. list-table:: EOSC Catalogue Profile Elements of "Basic" block
-   :widths: 25 50 10 10 10
-   :header-rows: 1
         
+.. list-table:: EOSC Catalogue Profile Elements of "Basic" block
+    :widths: 25 50 10 10 10
+    :header-rows: 1
+
    * - Element name
      - Description
      - Type
@@ -53,10 +54,11 @@ Catalogue
 2. Marketing
 ############
 
-.. list-table:: EOSC Catalogue Profile Elements of "Marketing" block
-   :widths: 30 50 20
-   :header-rows: 1
         
+.. list-table:: EOSC Catalogue Profile Elements of "Marketing" block
+    :widths: 25 50 10 10 10
+    :header-rows: 1
+
    * - Element name
      - Description
      - Type
@@ -81,10 +83,11 @@ Catalogue
 3. Classification
 #################
 
-.. list-table:: EOSC Catalogue Profile Elements of "Classification" block
-   :widths: 25 50 10
-   :header-rows: 1
         
+.. list-table:: EOSC Catalogue Profile Elements of "Classification" block
+    :widths: 25 50 10 10 10
+    :header-rows: 1
+
    * - Element name
      - Description
      - Type
@@ -109,10 +112,11 @@ Catalogue
 4. Location
 ###########
 
-.. list-table:: EOSC Catalogue Profile Elements of "Location" block
-   :widths: 25 50 10
-   :header-rows: 1
         
+.. list-table:: EOSC Catalogue Profile Elements of "Location" block
+    :widths: 25 50 10 10 10
+    :header-rows: 1
+
    * - Element name
      - Description
      - Type
@@ -147,10 +151,11 @@ Catalogue
 5. Contact
 ##########
 
-.. list-table:: EOSC Catalogue Profile Elements of "Contact" block - main contact
-   :widths: 25 50 10
-   :header-rows: 1
         
+.. list-table:: EOSC Catalogue Profile Elements of "Contact" block
+    :widths: 25 50 10 10 10
+    :header-rows: 1
+
    * - Element name
      - Description
      - Type
@@ -186,11 +191,10 @@ Catalogue
      - string
      - 1
      - N
+.. list-table:: EOSC Catalogue Profile Elements of "Contact" block
+    :widths: 25 50 10 10 10
+    :header-rows: 1
 
-.. list-table:: EOSC Catalogue Profile Elements of "Contact" block - public contact
-   :widths: 25 50 10
-   :header-rows: 1
-        
    * - Element name
      - Description
      - Type
@@ -230,10 +234,11 @@ Catalogue
 6. Dependencies
 ###############
 
-.. list-table:: EOSC Provider Profile Elements of "Dependencies" block
-   :widths: 25 50 10
-   :header-rows: 1
         
+.. list-table:: EOSC Catalogue Profile Elements of "Dependencies" block
+    :widths: 25 50 10 10 10
+    :header-rows: 1
+
    * - Element name
      - Description
      - Type
