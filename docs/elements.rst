@@ -27,7 +27,7 @@ Catalogue
      - Y
    * - abbreviation
      - An abbreviation of the (Multi-Provider Regional or Thematic) Catalogue Name.
-     - string
+     - string (recommended < 60 characters)
      - 1
      - Y
    * - website
