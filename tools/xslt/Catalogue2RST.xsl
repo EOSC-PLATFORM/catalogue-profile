@@ -6,6 +6,7 @@
     <xsl:output method="xml"
                 omit-xml-declaration="yes"/>
     <xsl:include href="vocabulary.xsl"/>
+    <xsl:include href="helper.xsl"/>
 
     <xsl:template match="/">
 .. _catalogue:
@@ -196,30 +197,21 @@ no declaration in XSD schema
                 <xsl:call-template name="selectSection"><xsl:with-param name="keyName" select="'merilScientificDomains'" /></xsl:call-template>
                 -->
     </xsl:template>
-<xsl:template name="tableHead">
-    <xsl:param name="blockName" />
-.. list-table:: EOSC Catalogue Profile Elements of "<xsl:value-of select="$blockName"/>" block
-    :widths: 25 50 10 10 10
-    :header-rows: 1
 
-   * - Element name
-     - Description
-     - Type
-     - Multiplicity
-     - Mandatory</xsl:template>
 
     <!-- selectSection: provider -->
     <xsl:template name="selectSection">
         <xsl:param name="entity" />
         <xsl:param name="keyName" />
    * - <xsl:value-of select="normalize-space(//xs:complexType[@name=$entity]//xs:element[@name=$keyName]//@name)" />
-     - <xsl:value-of select="normalize-space(//xs:complexType[@name=$entity]//xs:element[@name=$keyName]//xs:documentation)" />
-        <xsl:call-template name="checkVocabulary">
-            <xsl:with-param name="nameToCheck" select="$keyName" />
-        </xsl:call-template><xsl:if test="normalize-space(//xs:complexType[@name=$entity]//xs:element[@name=$keyName]//@type)">
+     - <xsl:value-of select="normalize-space(//xs:complexType[@name=$entity]//xs:element[@name=$keyName]//xs:documentation)" /><xsl:if test="normalize-space(//xs:complexType[@name=$entity]//xs:element[@name=$keyName]//@type)">
      - <xsl:call-template name="search-and-replace"> <xsl:with-param name="input" select="normalize-space(//xs:complexType[@name=$entity]//xs:element[@name=$keyName]//@type)" /> <xsl:with-param
-            name="search-string" select="'xs:'"/><xsl:with-param name="replace-string" select="''"/></xsl:call-template></xsl:if><xsl:if test="not(normalize-space(//xs:complexType[@name=$entity]//xs:element[@name=$keyName]//@type))">
-     - </xsl:if><xsl:if test="(//xs:complexType[@name=$entity]//xs:element[@name=$keyName]/@minOccurs = 0) and (count(//xs:complexType[@name=$entity]//xs:element[@name=$keyName]/@maxOccurs) = 0)"><!-- check if one and optional -->
+            name="search-string" select="'xs:'"/><xsl:with-param name="replace-string" select="''"/></xsl:call-template><xsl:call-template name="checkVocabulary">
+        <xsl:with-param name="nameToCheck" select="$keyName" />
+    </xsl:call-template></xsl:if><xsl:if test="not(normalize-space(//xs:complexType[@name=$entity]//xs:element[@name=$keyName]//@type))">
+     - <xsl:call-template name="checkVocabulary">
+        <xsl:with-param name="nameToCheck" select="$keyName" />
+    </xsl:call-template></xsl:if><xsl:if test="(//xs:complexType[@name=$entity]//xs:element[@name=$keyName]/@minOccurs = 0) and (count(//xs:complexType[@name=$entity]//xs:element[@name=$keyName]/@maxOccurs) = 0)"><!-- check if one and optional -->
      - 1</xsl:if><xsl:if test="(count(//xs:complexType[@name=$entity]//xs:element[@name=$keyName]/@minOccurs) = 0) and (count(//xs:complexType[@name=$entity]//xs:element[@name=$keyName]/@maxOccurs) = 0)"><!-- check if one and mandatory -->
      - 1</xsl:if><xsl:if test="(//xs:complexType[@name=$entity]//xs:element[@name=$keyName]/@minOccurs = 0) and (//xs:complexType[@name=$entity]//xs:element[@name=$keyName]/@maxOccurs = 'unbounded')"><!-- check if one and mandatory -->
      - Multiple</xsl:if><xsl:if test="(count(//xs:complexType[@name=$entity]//xs:element[@name=$keyName]/@minOccurs) > 0) and (//xs:complexType[@name=$entity]//xs:element[@name=$keyName]/@minOccurs = 0)">
