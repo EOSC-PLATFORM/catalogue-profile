@@ -20,6 +20,11 @@ Catalogue
      - Type
      - Multiplicity
      - Mandatory
+   * - id
+     - A persistent identifier, a unique reference to the (Multi-Provider Regional or Thematic) Catalogue in the context of the EOSC Portal.
+     - string
+     - 1
+     - Y
    * - name
      - Full Name of the (Multi-Provider Regional or Thematic) Catalogue.
      - string
