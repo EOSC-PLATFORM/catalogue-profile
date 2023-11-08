@@ -3,6 +3,9 @@ Introduction
 
 An EOSC Multi-Provider Regional or Thematic Catalogue is an...
 
+
+`Link to Human Readable Version of this document (ReadTheDocs) < >`_
+
 Versions
 ^^^^^^^^
 
