@@ -8,4 +8,3 @@
 
 xmlstarlet tr xslt/Catalogue2RST.xsl ../schemas/schema1.xsd > ../docs/elements.rst 2>> exceptionTR.log
 # xmlstarlet tr xslt/selectDocumentationsForComplexType.xsl ../schemas/schema1.xsd > ../docs/elements.rst 2>> exceptionTR.log
-
